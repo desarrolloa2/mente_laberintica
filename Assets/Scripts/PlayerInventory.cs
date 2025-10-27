@@ -7,6 +7,12 @@ public class PlayerInventory : MonoBehaviour
     public TextMeshProUGUI heartText;
     public TextMeshProUGUI clockText;
 
+    [Header("Puerta")]
+    public GameObject door; // puerta a destruir
+    public int heartsRequired = 5;
+    public int clocksRequired = 5;
+    private bool doorOpened = false;
+
     private int hearts = 0;
     private int clocks = 0;
 
@@ -28,6 +34,23 @@ public class PlayerInventory : MonoBehaviour
         }
 
         UpdateUI();
+        CheckDoorCondition();
+    }
+
+    private void CheckDoorCondition()
+    {
+        if (!doorOpened && hearts >= heartsRequired && clocks >= clocksRequired)
+        {
+            doorOpened = true;
+
+            if (door != null)
+            {
+                // Puedes elegir entre ocultarla o destruirla
+                // door.SetActive(false);
+                Destroy(door);
+                Debug.Log("🚪 ¡Puerta abierta! Has recolectado todos los ítems.");
+            }
+        }
     }
 
     private void UpdateUI()
