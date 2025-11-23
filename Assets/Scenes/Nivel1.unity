@@ -1032,12 +1032,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  chaseSpeed: 5
   loop: 1
   lookAtTarget: 1
   waypoints:
   - {fileID: 1466548806}
   - {fileID: 496094041}
   - {fileID: 1650407811}
+  detectionRadius: 8
+  loseSightRadius: 12
+  fieldOfView: 90
+  player: {fileID: 1017317019}
   damage: 10
 --- !u!54 &95343610
 Rigidbody:
@@ -8283,11 +8288,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  chaseSpeed: 5
   loop: 1
   lookAtTarget: 1
   waypoints:
   - {fileID: 1415168795}
   - {fileID: 827805940}
+  detectionRadius: 8
+  loseSightRadius: 12
+  fieldOfView: 90
+  player: {fileID: 1017317019}
   damage: 10
 --- !u!1 &1384946707
 GameObject:
@@ -11812,11 +11822,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  chaseSpeed: 5
   loop: 1
   lookAtTarget: 1
   waypoints:
   - {fileID: 1599508482}
   - {fileID: 1819095150}
+  detectionRadius: 8
+  loseSightRadius: 12
+  fieldOfView: 90
+  player: {fileID: 1017317019}
   damage: 10
 --- !u!54 &1875290430
 Rigidbody:
@@ -12447,9 +12462,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1976478719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -333, y: 210}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 100, y: -30}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1918457386
