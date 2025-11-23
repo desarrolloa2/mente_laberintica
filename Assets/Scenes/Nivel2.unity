@@ -1002,12 +1002,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  chaseSpeed: 5
   loop: 1
   lookAtTarget: 1
   waypoints:
   - {fileID: 1466548806}
   - {fileID: 496094041}
   - {fileID: 1650407811}
+  detectionRadius: 8
+  loseSightRadius: 12
+  fieldOfView: 90
+  player: {fileID: 1017317019}
   damage: 10
 --- !u!54 &95343610
 Rigidbody:
@@ -6170,11 +6175,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  chaseSpeed: 5
   loop: 1
   lookAtTarget: 1
   waypoints:
   - {fileID: 343409594}
   - {fileID: 391977796}
+  detectionRadius: 8
+  loseSightRadius: 12
+  fieldOfView: 90
+  player: {fileID: 1017317019}
   damage: 10
 --- !u!54 &957194038
 Rigidbody:
@@ -6846,11 +6856,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  chaseSpeed: 5
   loop: 1
   lookAtTarget: 1
   waypoints:
   - {fileID: 32817186}
   - {fileID: 331806502}
+  detectionRadius: 8
+  loseSightRadius: 12
+  fieldOfView: 90
+  player: {fileID: 1017317019}
   damage: 10
 --- !u!54 &1057075257
 Rigidbody:
@@ -8770,11 +8785,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  chaseSpeed: 5
   loop: 1
   lookAtTarget: 1
   waypoints:
   - {fileID: 1415168795}
   - {fileID: 827805940}
+  detectionRadius: 8
+  loseSightRadius: 12
+  fieldOfView: 90
+  player: {fileID: 1017317019}
   damage: 10
 --- !u!1 &1384946707
 GameObject:
@@ -12536,11 +12556,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  chaseSpeed: 5
   loop: 1
   lookAtTarget: 1
   waypoints:
   - {fileID: 1599508482}
   - {fileID: 1819095150}
+  detectionRadius: 8
+  loseSightRadius: 12
+  fieldOfView: 90
+  player: {fileID: 1017317019}
   damage: 10
 --- !u!54 &1875290430
 Rigidbody:
