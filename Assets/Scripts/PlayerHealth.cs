@@ -2,12 +2,14 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI; // para usar Image
 using System.Collections; // para corrutinas
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
     [Header("Configuración de vida")]
     public int maxHealth = 100;
     public int currentHealth;
+
 
     [Header("UI")]
     public TextMeshProUGUI healthText;
@@ -46,6 +48,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Debug.Log("💀 El jugador ha muerto");
+            SceneManager.LoadScene("GameOver"); // ← Nombre exacto de tu escena
         }
     }
 
